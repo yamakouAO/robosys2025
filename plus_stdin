@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# SPDX=FileCopyright: 2025 yamaguchi kou 
+
 import sys
 
 ans = 0.0
