@@ -1,13 +1,16 @@
-#!/bin/bash
-
-a=山口
+#!/bin/bash -xv
+# SPDX=FileCopyright: 2025 yamakouAO 
+# SPDX-License-Identifier: BSD-3-Clause
 
 ng () {
 	echo ${1}行目が違うよ
 	res=1
 }
 
-test "$a" = 山田 || ng "$LINENO"
-test "$a" = 山口 || ng "$LINENO"
+res=0
 
+out=$(seq 5 | ./plus)
+test "${out}" = 15 || ng "$LINENO"
+
+test "${res}" = 0 && echo OK
 exit $res
