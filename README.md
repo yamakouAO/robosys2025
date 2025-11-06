@@ -1,7 +1,7 @@
 # robosys2025
 学習用
 
-# plusコマンド
+## plusコマンド
 ![test](https://github.com/yamakouAO/robosys2025/actions/workflows/test.yml/badge.svg)
 
 このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
