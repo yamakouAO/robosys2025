@@ -35,7 +35,7 @@ test "$?" = 1      || ng "$LINENO"
 test "${out}" = "" || ng "$LINENO"
 
 ### STRANGE INPUT ###
-out=$(./matrix3*3 あ0 0 0 0 0 0 0 0)
+out=$(./matrix3*3 あ 0 0 0 0 0 0 0 0)
 test "$?" = 1      || ng "$LINENO"
 test "${out}" = "" || ng "$LINENO"
 
