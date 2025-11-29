@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+# SPDX=FileCopyright: 2025 yamakouAO
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+
+AB = float(sys.argv[1]) * float(sys.argv[4])
+CD = float(sys.argv[2]) * float(sys.argv[3])
+print( float(AB) - float(CD) )
