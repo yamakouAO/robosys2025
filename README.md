@@ -9,26 +9,6 @@ $ git clone https//github.com/yamakouAO/robosys2025.git
 $ cd robosys2025
 ```
 
-## plusコマンド
-![test](https://github.com/yamakouAO/robosys2025/actions/workflows/test.yml/badge.svg)
-
-### 概要
-入力された縦の数値を全部足して、その合計を出力するコマンド
-
-### 必要なソフトウェア
-- Python
-  - テスト済みバージョン: 3.7 ~ 3.13
-
-### テスト環境
-- ubuntu-latest
-
-### 使用例
-
-```
-$ seq 5 | ./plus
-15
-```
-
 ## matrix2*2コマンド
 ![test](https://github.com/yamakouAO/robosys2025/actions/workflows/test_matrix2*2.yml/badge.svg)
 
@@ -72,7 +52,7 @@ $$
 ```
 $ ./matrix2*2 a b c d
 ```
-と入力します(数字以外には対応していません)
+と入力します(説明のため数字以外を入力していますが本来は数字以外には対応していません)
 
 ## matrix3*3コマンド                                                 
 ![test](https://github.com/yamakouAO/robosys2025/actions/workflows/test_matrix3*3.yml/badge.svg)
@@ -119,7 +99,7 @@ $$
 ```
 $ ./matrix2*2 a b c d e f g h i
 ```
-と入力します(数字以外には対応していません)
+と入力します(説明のため数字以外を入力していますが本来数字以外には対応していません)
 
 
 このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
