@@ -67,14 +67,15 @@ c & d
 \end{bmatrix}
 $$
 
-のばあい
+の場合
 
 ```
 $ ./matrix2*2 a b c d
 ```
 と入力します(数字以外には対応していません)
 
-## matrix3*3コマンド                                                  ![test](https://github.com/yamakouAO/robosys2025/actions/workflows/test_matrix3*3.yml/badge.svg)
+## matrix3*3コマンド                                                 
+![test](https://github.com/yamakouAO/robosys2025/actions/workflows/test_matrix3*3.yml/badge.svg)
 
 ### 概要
 3×3の行列を計算し出力するコマンド
@@ -100,11 +101,11 @@ $$
 
 ```
 $ ./matrix2*2 1 2 3 4 5 6 7 8 9
--2.0
+0.0
 ```
 ### 使用方法
 調べたい行列の一番上の行から順に数値を入力していく
-基本はmatrix2*2 と同様です
+(基本はmatrix2*2 と同様です)
 
 $$                                                                    \begin{bmatrix}
 a & b & c \\
@@ -113,12 +114,12 @@ g & h & i
 \end{bmatrix}
 $$
 
-のばあい
+の場合
 
 ```
 $ ./matrix2*2 a b c d e f g h i
 ```
-と入力します(数字以外には対応していません)
+と入力します(本来は数字以外には対応していません)
 
 
 このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
