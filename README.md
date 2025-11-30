@@ -1,7 +1,7 @@
 # robosys2025
 学習用
 
-* インストール方法
+## インストール方法
 
 ```
 $ git clone https//github.com/yamakouAO/robosys2025.git
@@ -12,14 +12,14 @@ $ cd robosys2025
 ## plusコマンド
 ![test](https://github.com/yamakouAO/robosys2025/actions/workflows/test.yml/badge.svg)
 
-* 概要
+### 概要
 入力された縦の数値を全部足して、その合計を出力するコマンド
 
-* 必要なソフトウェア
+###必要なソフトウェア
 - Python
   - テスト済みバージョン: 3.7 ~ 3.13
 
-* テスト環境
+###テスト環境
 - ubuntu-latest
 
 
