@@ -50,13 +50,28 @@ $$
 3 & 4 
 \end{bmatrix}
 $$
-
 の数値化
 
 ```
 $ ./matrix2*2 1 2 3 4
 -2.0
 ```
+### 使用方法
+調べたい行列の一番上の行から順に数値を入力していく
+
+$$
+\begin{bmatrix}
+a & b \\
+c & d
+\end{bmatrix}
+$$
+のばあい
+
+```
+$ ./matrix2*2 a b c d
+```
+と入力します
+
 
 このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 - このパッケージは，[Ryuichi ueda](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2025) 由来のコード（© 2025 Ryuichi Ueda）を利用しています．
