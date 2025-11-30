@@ -29,7 +29,7 @@ $ seq 5 | ./plus
 15
 ```
 
-##　matrix2*2コマンド
+## matrix2*2コマンド
 ![test](https://github.com/yamakouAO/robosys2025/actions/workflows/test_matrix2*2.yml/badge.svg)
 
 ### 概要
@@ -43,12 +43,14 @@ $ seq 5 | ./plus
 - ubuntu-latest
 
 ### 使用例
+
 $$
 \begin{bmatrix}
 1 & 2 \\
 3 & 4 
 \end{bmatrix}
 $$
+
 の数値化
 
 ```
