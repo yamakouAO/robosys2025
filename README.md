@@ -26,11 +26,35 @@ $ cd robosys2025
 
 ```
 $ seq 5 | ./plus
- 
-   15
+15
 ```
 
+##　matrix2*2コマンド
+![test](https://github.com/yamakouAO/robosys2025/actions/workflows/test_matrix2*2.yml/badge.svg)
 
+### 概要
+2×2の行列を計算し出力するコマンド
+
+### 必要なソフトウェア
+- Python
+  - テスト済みバージョン: 3.7 ~ 3.13
+
+### テスト環境
+- ubuntu-latest
+
+### 使用例
+$$
+\begin{bmatrix}
+1 & 2 \\
+3 & 4 
+\end{bmatrix}
+$$
+の数値化
+
+```
+$ ./matrix2*2 1 2 3 4
+-2.0
+```
 
 このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 - このパッケージは，[Ryuichi ueda](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2025) 由来のコード（© 2025 Ryuichi Ueda）を利用しています．
