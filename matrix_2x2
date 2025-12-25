@@ -11,6 +11,5 @@ for line in sys.stdin:
     for v in line.split():
         vals.append(float(v))
 
-a, b, c, d = vals
-det = a * d - b * c
-print(det)
+A, B, C, D = vals
+print(A * D - B * C)

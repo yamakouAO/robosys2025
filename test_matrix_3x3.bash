@@ -10,32 +10,33 @@ ng () {
 res=0
 
 ### NORMAL INPUT ###
-out=$(./matrix_3x3 0 0 0 0 0 0 0 0 0)
+out=$(echo 0 0 0 0 0 0 0 0 0 |./matrix_3x3 )
 test "${out}" = 0.0 || ng "$LINENO"
 
 ### NORMAL INPUT ###
-out=$(./matrix_3x3 1 0 0 1 0 0 0 0 0 )
-test "${out}" = 0.0 || ng "$LINENO"
-
-### NORMAL INPUT ###
-out=$(./matrix_3x3 1 0 0 0 1 0 0 0 1)
+out=$(echo 1 0 0 0 1 0 0 0 1 |./matrix_3x3 )
 test "${out}" = 1.0 || ng "$LINENO"
 
 ### NORMAL INPUT ###
-out=$(./matrix_3x3 1 2 3 0 4 5 0 0 6)
+out=$(echo 1 2 3 0 4 5 0 0 6 |./matrix_3x3 )
 test "${out}" = 24.0 || ng "$LINENO"
 
 ### NORMAL INPUT ###
-out=$(./matrix_3x3 1 2 3 4 5 6 7 8 9)
+out=$(seq 9 |./matrix_3x3 )
 test "${out}" = 0.0 || ng "$LINENO"
 
 ### STRANGE INPUT ###
-out=$(./matrix_3x3 0 0 0 0 0 0 0 0 )
+out=$(echo |./matrix_3x3 )
 test "$?" = 1      || ng "$LINENO"
 test "${out}" = "" || ng "$LINENO"
 
 ### STRANGE INPUT ###
-out=$(./matrix_3x3 あ 0 0 0 0 0 0 0 0)
+out=$(echo 0 0 0 0 0 0 0 0 |./matrix_3x3 )
+test "$?" = 1      || ng "$LINENO"
+test "${out}" = "" || ng "$LINENO"
+
+### STRANGE INPUT ###
+out=$(echo あ 0 0 0 0 0 0 0 0 |./matrix_3x3 )
 test "$?" = 1      || ng "$LINENO"
 test "${out}" = "" || ng "$LINENO"
 

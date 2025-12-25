@@ -1,14 +1,22 @@
 #!/usr/bin/python3
-# SPDX=FileCopyright: 2025 yamakouAO
+# SPDX-FileCopyrightText: 2025 yamakouAO
 # SPDX-License-Identifier: BSD-3-Clause
 
 import sys
 
-AEI = float(sys.argv[1]) * float(sys.argv[5]) * float(sys.argv[9])
-BFG = float(sys.argv[2]) * float(sys.argv[6]) * float(sys.argv[7]) 
-CHD = float(sys.argv[3]) * float(sys.argv[8]) * float(sys.argv[4])
-AHF = float(sys.argv[1]) * float(sys.argv[8]) * float(sys.argv[6])
-BDI = float(sys.argv[2]) * float(sys.argv[4]) * float(sys.argv[9])
-CEG = float(sys.argv[3]) * float(sys.argv[5]) * float(sys.argv[7])
+vals = []
 
-print( float(AEI) + float(BFG) + float(CHD) - float(AHF) - float(BDI) - float(CEG) )
+
+for line in sys.stdin:
+    for v in line.split():
+        vals.append(float(v))
+
+A, B, C, D, E, F, G, H, I = vals
+AEI = A * E * I
+BFG = B * F * G
+CHD = C * H * D
+AHF = A * H * F
+BDI = B * D * I
+CEG = C * E * G
+
+print(AEI + BFG + CHD - AHF - BDI - CEG)
