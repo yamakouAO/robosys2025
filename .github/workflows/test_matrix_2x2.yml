@@ -1,4 +1,4 @@
-name: test_matrix2*2
+name: test_matrix_2x2
 on: push
 jobs:
   test:
@@ -8,5 +8,5 @@ jobs:
         python-version: ["3.7", "3.8", "3.9", "3.10", "3.11", "3.12", "3.13"]
     steps:
     - uses: actions/checkout@v3
-    - name: All test_matrix2*2
-      run: bash -xv ./test_matrix2*2.bash
+    - name: All test_matrix_2x2
+      run: bash -xv ./test_matrix_2x2.bash
