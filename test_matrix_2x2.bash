@@ -10,24 +10,29 @@ ng () {
 res=0
 
 ### NORMAL INPUT ###
-out=$(./matrix_2x2 0 0 0 0)
+out=$(echo 0 0 0 0 | ./matrix_2x2)
 test "${out}" = 0.0 || ng "$LINENO"
 
 ### NORMAL INPUT ###
-out=$(./matrix_2x2 1 0 0 1)
+out=$(echo 1 0 0 1 | ./matrix_2x2)
 test "${out}" = 1.0 || ng "$LINENO"
 
 ### NORMAL INPUT ###
-out=$(./matrix_2x2 1 2 3 4)
+out=$(seq 4 | ./matrix_2x2)
 test "${out}" = -2.0 || ng "$LINENO"
 
 ### STRANGE INPUT ###
-out=$(./matrix_2x2 0 0 0)
+out=$(seq 3 | ./matrix_2x2)
 test "$?" = 1      || ng "$LINENO"
 test "${out}" = "" || ng "$LINENO"
 
 ### STRANGE INPUT ###
-out=$(./matrix_2x2 あ0 0 0)
+out=$(seq 5 | ./matrix_2x2)
+test "$?" = 1      || ng "$LINENO"
+test "${out}" = "" || ng "$LINENO"
+
+### STRANGE INPUT ###
+out=$(seq a 0 0 0 | ./matrix_2x2)
 test "$?" = 1      || ng "$LINENO"
 test "${out}" = "" || ng "$LINENO"
 
